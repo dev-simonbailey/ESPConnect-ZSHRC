@@ -175,5 +175,74 @@ Change the directory or default port
 
 Edit the top of the function:
 
-```local dir="..."
-local port="${1:-3000}"```
+```
+local dir="..." local port="${1:-3000}"
+```
+
+📝 How to Use Nano (Open, Edit, Save, Exit)
+
+Nano is a simple terminal-based text editor included with macOS.
+Here’s a quick guide to the key commands you’ll need.
+
+⸻
+
+📂 Opening a File in Nano
+
+```nano <filename>```
+
+Example:
+```nano ~/.zshrc```
+
+If the file doesn’t exist, Nano will create it when you save.
+
+⸻
+
+✏️ Editing Inside Nano
+
+Just start typing — everything you type is inserted directly into the file.
+
+⸻
+
+💾 Saving Your Changes
+
+Press:
+
+```Ctrl + O```
+
+Nano will show
+
+```File Name to Write: <filename>```
+
+Press Enter to confirm and save.
+
+⸻
+
+🚪 Exiting Nano
+
+Press:
+
+```Ctrl + X```
+
+If you have unsaved changes, Nano will ask:
+
+```Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?```
+
+Press:
+- Y = save changes
+- N = exit without saving
+
+If you press Y, Nano will ask you to confirm the filename again — just hit Enter.
+
+🔁 Summary Table
+
+-  Action
+  - Keys
+- Save changes
+ -  Ctrl + O
+- Exit Nano
+  - Ctrl + X
+- Save + Exit combo
+  - Ctrl + O, then Enter, then Ctrl + X
+- Cancel an action
+  - Ctrl + C
+
