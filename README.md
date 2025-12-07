@@ -236,14 +236,9 @@ If you press Y, Nano will ask you to confirm the filename again — just hit Ent
 
 🔁 Summary Table
 
--  Action
-  -  Keys
-- Save changes
-   - Ctrl + O
-- Exit Nano
-  - Ctrl + X
-- Save + Exit combo
-  - Ctrl + O, then Enter, then Ctrl + X
-- Cancel an action
-  - Ctrl + C
+-  Action - Keys
+- Save changes - Ctrl + O
+- Exit Nano - Ctrl + X
+- Save + Exit combo - Ctrl + O, then Enter, then Ctrl + X
+- Cancel an action - Ctrl + C
 
