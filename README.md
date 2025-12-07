@@ -239,7 +239,7 @@ If you press Y, Nano will ask you to confirm the filename again — just hit Ent
 -  Action
   - Keys
 - Save changes
- -  Ctrl + O
+   - Ctrl + O
 - Exit Nano
   - Ctrl + X
 - Save + Exit combo
