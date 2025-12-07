@@ -237,7 +237,7 @@ If you press Y, Nano will ask you to confirm the filename again — just hit Ent
 🔁 Summary Table
 
 -  Action
-  - Keys
+  -  Keys
 - Save changes
    - Ctrl + O
 - Exit Nano
