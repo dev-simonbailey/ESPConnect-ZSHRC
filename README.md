@@ -100,9 +100,11 @@ Custom Port
 
 Example prompt when a process is running on that port
 
-```⚠️ Found process(es) listening on port 4173:
+```
+⚠️ Found process(es) listening on port 4173:
    → 12345 node    node /usr/local/bin/serve
-❓ Kill these process(es) before starting a new server? [y/N]```
+❓ Kill these process(es) before starting a new server? [y/N]
+```
 
 🛠 Troubleshooting
 
