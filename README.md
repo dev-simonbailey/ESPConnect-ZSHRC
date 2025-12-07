@@ -69,24 +69,24 @@ Reload your terminal configuration:
 ```source ~/.zshrc```
 
 🧠 What This Command Does
-	•	Accepts an optional port argument
-	•	Defaults to 3000 if none is provided
-	•	Automatically navigates to the ESPConnect build directory
-	•	Detects existing processes already using the selected port
-	•	Displays human-readable details for those processes:
-	•	PID
-	•	Command
-	•	Full execution arguments
-	•	Prompts the user before terminating anything
-	•	Safely kills existing processes only when confirmed
-	•	Launches a new npx serve instance on the chosen port
-	•	Reports the PID of the running server
-	•	Waits briefly to ensure the server initializes
-	•	Opens Google Chrome with a new tab pointing at the URL
-	•	Brings Chrome to the foreground
-	•	Exits gracefully if:
-	•	The directory cannot be accessed
-	•	The user chooses not to kill existing processes
+- Accepts an optional port argument
+- Defaults to 3000 if none is provided
+- Automatically navigates to the ESPConnect build directory
+- Detects existing processes already using the selected port
+- Displays human-readable details for those processes:
+- PID
+- Command
+- Full execution arguments
+- Prompts the user before terminating anything
+- Safely kills existing processes only when confirmed
+- Launches a new npx serve instance on the chosen port
+- Reports the PID of the running server
+- Waits briefly to ensure the server initializes
+- Opens Google Chrome with a new tab pointing at the URL
+- Brings Chrome to the foreground
+- Exits gracefully if:
+- The directory cannot be accessed
+- The user chooses not to kill existing processes
 
 🕹 Usage
 
