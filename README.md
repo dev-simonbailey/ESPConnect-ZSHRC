@@ -2,11 +2,16 @@
 
 The espconnect command is a convenient macOS function that streamlines running the ESPConnect UI from any terminal session. It automatically starts a local server, handles port conflicts safely, and opens the UI in Google Chrome.
 
-⸻
+⚠️ Disclaimer
+
+This script is provided as-is, with no guarantees or warranties of any kind. While it’s designed to be safe and helpful, you use it at your own risk. If something unexpected happens — whether it’s a hung process, a misbehaving port, or your terminal developing a personality — that part’s on you. Always review and understand the commands before running them.
 
 📥 Installation
 
 Add the function below to your ~/.zshrc:
+
+See at the bottom of this readme for details on nano operations
+
 ```
 espconnect() {
   local dir="/Applications/MAMP/htdocs/github/ESPConnect/dist"
@@ -184,7 +189,6 @@ local dir="..." local port="${1:-3000}"
 Nano is a simple terminal-based text editor included with macOS.
 Here’s a quick guide to the key commands you’ll need.
 
-⸻
 
 📂 Opening a File in Nano
 
@@ -195,13 +199,11 @@ Example:
 
 If the file doesn’t exist, Nano will create it when you save.
 
-⸻
 
 ✏️ Editing Inside Nano
 
 Just start typing — everything you type is inserted directly into the file.
 
-⸻
 
 💾 Saving Your Changes
 
@@ -215,7 +217,6 @@ Nano will show
 
 Press Enter to confirm and save.
 
-⸻
 
 🚪 Exiting Nano
 
