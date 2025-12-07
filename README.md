@@ -63,3 +63,115 @@ espconnect() {
   open -a "Google Chrome" "$url"
 }
 ```
+
+Reload your terminal configuration:
+
+```source ~/.zshrc```
+
+🧠 What This Command Does
+	•	Accepts an optional port argument
+	•	Defaults to 3000 if none is provided
+	•	Automatically navigates to the ESPConnect build directory
+	•	Detects existing processes already using the selected port
+	•	Displays human-readable details for those processes:
+	•	PID
+	•	Command
+	•	Full execution arguments
+	•	Prompts the user before terminating anything
+	•	Safely kills existing processes only when confirmed
+	•	Launches a new npx serve instance on the chosen port
+	•	Reports the PID of the running server
+	•	Waits briefly to ensure the server initializes
+	•	Opens Google Chrome with a new tab pointing at the URL
+	•	Brings Chrome to the foreground
+	•	Exits gracefully if:
+	•	The directory cannot be accessed
+	•	The user chooses not to kill existing processes
+
+🕹 Usage
+
+Default port (3000)
+
+```espconnect```
+
+Custom Port
+
+```espconnect 4173```
+
+Example prompt when a process is running on that port
+
+```⚠️ Found process(es) listening on port 4173:
+   → 12345 node    node /usr/local/bin/serve
+❓ Kill these process(es) before starting a new server? [y/N]```
+
+🛠 Troubleshooting
+
+❌ Chrome doesn’t open
+
+Ensure Chrome exists at:
+
+```/Applications/Google Chrome.app```
+
+If you use a different browser, update this line:
+
+```open -a "Google Chrome" "$url"```
+
+❌ npx serve reports “port already in use” after killing
+
+macOS sometimes delays port freeing by a few seconds.
+Run again:
+
+```espconnect <port>```
+
+or add a longer delay:
+
+```sleep 3```
+
+❌ serve command not found
+
+Install the package:
+
+```npm install -g serve```
+
+(Or keep using npx — both work.)
+
+❌ Permission denied
+
+Ensure you have access to the directory:
+
+```cd /Applications/MAMP/htdocs/github/ESPConnect/dist```
+
+🔧 Future Enhancements (Optional)
+
+These can be added later if you want a deluxe version:
+- Port availability spinner
+  - Show an animated spinner while waiting for the port to free.
+- Server start verification
+  - Poll http://localhost:<port> until it responds before opening Chrome.
+- Live log tailing
+  - Capture and display output from the serve process.
+- Auto-restart detection
+  - Restart the server if it crashes.
+- Environment variables
+  - Allow $ESPCONNECT_DIR and $ESPCONNECT_DEFAULT_PORT.
+
+🧹 Uninstall or Modify
+
+Remove the command
+
+Open your zshrc:
+
+```nano ~/.zshrc```
+
+Delete the espconnect() function block.
+
+Reload:
+
+```source ~/.zshrc```
+
+Change the directory or default port
+
+Edit the top of the function:
+
+```local dir="..."
+local port="${1:-3000}"```
